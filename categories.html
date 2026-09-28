@@ -1,0 +1,745 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Categories — Echoes Of Structure</title>
+  <meta name="description" content="Browse all categories and topics from Echoes Of Structure — interior design, architecture, materials, space planning, lighting, furniture, and more.">
+  <meta name="author" content="Echoes Of Structure Editorial">
+  <link rel="canonical" href="https://echoesofstructure.com/categories.html">
+  <!-- Open Graph -->
+  <meta property="og:title" content="Categories — Echoes Of Structure">
+  <meta property="og:description" content="Interior design, architecture, materials, lighting, space planning, furniture — explore our complete archive by topic.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://echoesofstructure.com/categories.html">
+  <meta property="og:image" content="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=1200&h=630&fit=crop">
+  <!-- Schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "CollectionPage",
+    "name": "Categories — Echoes Of Structure",
+    "description": "Browse articles by category: Interior Design, Architecture, Materials, Space Planning, Lighting, Furniture.",
+    "url": "https://echoesofstructure.com/categories.html",
+    "author": {
+      "@type": "Organization",
+      "name": "Echoes Of Structure Editorial"
+    }
+  }
+  </script>
+  <style>
+    /* ----- RESET & VARIABLES (same as about) ----- */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    :root {
+      --ink: #1e1e1e;
+      --ink-soft: #3a3a3a;
+      --paper: #faf9f7;
+      --paper-warm: #f4f1ec;
+      --accent: #b86b4b;
+      --accent-soft: #d9b8a8;
+      --border-light: #e3dfd9;
+      --border-medium: #cfc9c2;
+      --font-serif: 'Georgia', 'Times New Roman', 'Palatino', serif;
+      --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+      --max-width: 1280px;
+      --content-width: 720px;
+    }
+
+    body {
+      background-color: var(--paper);
+      color: var(--ink);
+      font-family: var(--font-sans);
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+      font-size: 16px;
+    }
+
+    img {
+      max-width: 100%;
+      display: block;
+      height: auto;
+    }
+
+    a {
+      color: var(--ink);
+      text-decoration: none;
+      transition: color 0.15s ease;
+    }
+
+    a:hover {
+      color: var(--accent);
+    }
+
+    h1, h2, h3, h4 {
+      font-family: var(--font-serif);
+      font-weight: 400;
+      letter-spacing: -0.02em;
+      line-height: 1.2;
+    }
+
+    h1 { font-size: 2.8rem; }
+    h2 { font-size: 2.2rem; margin-bottom: 1rem; }
+    h3 { font-size: 1.6rem; margin-bottom: 0.75rem; }
+    h4 { font-size: 1.2rem; margin-bottom: 0.5rem; }
+
+    p {
+      margin-bottom: 1.25rem;
+      color: var(--ink-soft);
+    }
+
+    .meta {
+      font-size: 0.8rem;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      color: #7a7269;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+      align-items: center;
+    }
+
+    .meta .category {
+      color: var(--accent);
+      font-weight: 600;
+    }
+
+    .reading-time {
+      color: #8a827a;
+    }
+
+    .container {
+      max-width: var(--max-width);
+      margin: 0 auto;
+      padding: 0 1.5rem;
+    }
+
+    /* HEADER (exact same styles) */
+    .site-header {
+      border-bottom: 1px solid var(--border-light);
+      padding: 2rem 0 1.5rem;
+      background: var(--paper);
+      position: sticky;
+      top: 0;
+      z-index: 10;
+      backdrop-filter: blur(4px);
+      background-color: rgba(250, 249, 247, 0.92);
+    }
+
+    .header-inner {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+      gap: 1.5rem;
+    }
+
+    .logo {
+      font-family: var(--font-serif);
+      font-size: 1.9rem;
+      letter-spacing: -0.03em;
+      font-weight: 400;
+      color: var(--ink);
+      line-height: 1.1;
+    }
+
+    .logo span {
+      font-style: italic;
+      color: var(--accent);
+    }
+
+    .logo-sub {
+      font-family: var(--font-sans);
+      font-size: 0.6rem;
+      text-transform: uppercase;
+      letter-spacing: 0.2em;
+      color: #8a827a;
+      display: block;
+      margin-top: 0.2rem;
+    }
+
+    .main-nav ul {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1.8rem;
+      list-style: none;
+    }
+
+    .main-nav a {
+      font-size: 0.85rem;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      font-weight: 500;
+      color: var(--ink-soft);
+      padding-bottom: 0.25rem;
+      border-bottom: 2px solid transparent;
+      transition: border-color 0.15s ease, color 0.15s ease;
+    }
+
+    .main-nav a:hover,
+    .main-nav a.active {
+      color: var(--ink);
+      border-bottom-color: var(--accent);
+    }
+
+    .search-toggle {
+      background: none;
+      border: 1px solid var(--border-medium);
+      padding: 0.5rem 1rem;
+      border-radius: 30px;
+      font-size: 0.8rem;
+      display: flex;
+      align-items: center;
+      gap: 0.4rem;
+      cursor: pointer;
+      color: var(--ink-soft);
+      transition: background 0.15s;
+      font-family: var(--font-sans);
+    }
+
+    .search-toggle:hover {
+      background: var(--paper-warm);
+    }
+
+    .search-bar {
+      display: none;
+      padding: 1rem 0 1.5rem;
+      border-bottom: 1px solid var(--border-light);
+    }
+
+    .search-bar.active {
+      display: block;
+    }
+
+    .search-bar input {
+      width: 100%;
+      padding: 0.9rem 1.2rem;
+      font-size: 1.1rem;
+      border: 1px solid var(--border-medium);
+      background: transparent;
+      font-family: var(--font-serif);
+      border-radius: 40px;
+      outline: none;
+    }
+
+    .search-bar input:focus {
+      border-color: var(--accent);
+    }
+
+    /* ----- CATEGORIES PAGE SPECIFIC ----- */
+    .page-title-section {
+      padding: 3rem 0 1.5rem;
+      border-bottom: 1px solid var(--border-light);
+      margin-bottom: 2.5rem;
+    }
+
+    .page-title-section h1 {
+      font-size: 3.2rem;
+      margin-bottom: 0.75rem;
+    }
+
+    .page-title-section .subhead {
+      font-size: 1.2rem;
+      color: var(--ink-soft);
+      max-width: 700px;
+      line-height: 1.5;
+    }
+
+    /* Category grid */
+    .category-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 2rem;
+      margin: 3rem 0 2rem;
+    }
+
+    .category-card {
+      background: var(--paper-warm);
+      border-radius: 4px;
+      overflow: hidden;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+      border: 1px solid var(--border-light);
+      display: flex;
+      flex-direction: column;
+    }
+
+    .category-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 12px 24px -12px rgba(0,0,0,0.12);
+      border-color: var(--border-medium);
+    }
+
+    .category-image {
+      aspect-ratio: 4 / 3;
+      overflow: hidden;
+      background: #ddd;
+    }
+
+    .category-image img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.3s ease;
+    }
+
+    .category-card:hover .category-image img {
+      transform: scale(1.02);
+    }
+
+    .category-info {
+      padding: 1.75rem 1.5rem 1.5rem;
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .category-info h3 {
+      font-size: 1.5rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .category-info p {
+      font-size: 0.95rem;
+      line-height: 1.6;
+      margin-bottom: 1.25rem;
+      flex: 1;
+    }
+
+    .category-stats {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-top: 1px solid var(--border-light);
+      padding-top: 1rem;
+      margin-top: 0.25rem;
+      font-size: 0.8rem;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      color: #7a7269;
+    }
+
+    .category-stats .count {
+      font-weight: 600;
+      color: var(--ink-soft);
+    }
+
+    /* featured category (optional bigger layout) */
+    .category-featured {
+      grid-column: span 3;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 0;
+      background: var(--paper-warm);
+      border-radius: 4px;
+      overflow: hidden;
+      border: 1px solid var(--border-light);
+      margin-bottom: 1rem;
+    }
+
+    .category-featured .category-image {
+      aspect-ratio: auto;
+      min-height: 280px;
+    }
+
+    .category-featured .category-info {
+      padding: 2.5rem 2.5rem;
+      justify-content: center;
+    }
+
+    .category-featured .category-info h3 {
+      font-size: 2.2rem;
+    }
+
+    .category-featured .category-info p {
+      font-size: 1.05rem;
+    }
+
+    @media (max-width: 1024px) {
+      .category-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+      .category-featured {
+        grid-column: span 2;
+        grid-template-columns: 1fr;
+      }
+      .category-featured .category-image {
+        min-height: 220px;
+        aspect-ratio: 16/9;
+      }
+    }
+
+    @media (max-width: 640px) {
+      .category-grid {
+        grid-template-columns: 1fr;
+      }
+      .category-featured {
+        grid-column: span 1;
+      }
+      .page-title-section h1 {
+        font-size: 2.4rem;
+      }
+      .category-featured .category-info {
+        padding: 1.75rem;
+      }
+    }
+
+    /* secondary list — simple all topics */
+    .all-topics {
+      margin: 3rem 0 2rem;
+      padding-top: 1rem;
+      border-top: 1px solid var(--border-light);
+    }
+
+    .all-topics h2 {
+      font-size: 1.6rem;
+      margin-bottom: 1.5rem;
+      font-family: var(--font-sans);
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: #5a5249;
+    }
+
+    .topic-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.75rem;
+    }
+
+    .topic-tags a {
+      display: inline-block;
+      padding: 0.6rem 1.2rem;
+      border: 1px solid var(--border-medium);
+      border-radius: 30px;
+      font-size: 0.85rem;
+      background: white;
+      transition: background 0.15s, border-color 0.15s;
+    }
+
+    .topic-tags a:hover {
+      background: var(--accent);
+      color: white;
+      border-color: var(--accent);
+    }
+
+    /* FOOTER (same) */
+    .site-footer {
+      margin-top: 4rem;
+      border-top: 1px solid var(--border-medium);
+      padding: 3rem 0 2rem;
+      background: var(--paper-warm);
+    }
+
+    .footer-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 2.5rem;
+    }
+
+    @media (max-width: 768px) {
+      .footer-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    .footer-grid h5 {
+      font-family: var(--font-sans);
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      font-size: 0.75rem;
+      margin-bottom: 1rem;
+      color: #7a7269;
+    }
+
+    .footer-grid ul {
+      list-style: none;
+    }
+
+    .footer-grid li {
+      margin-bottom: 0.6rem;
+      font-size: 0.9rem;
+    }
+
+    .footer-bottom {
+      margin-top: 3rem;
+      padding-top: 1.5rem;
+      border-top: 1px solid var(--border-light);
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      font-size: 0.8rem;
+      color: #7a7269;
+    }
+
+    @media (max-width: 640px) {
+      .header-inner {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+      .main-nav ul {
+        gap: 1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- HEADER (identical) -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="logo">
+        Echoes <span>Of</span> Structure
+        <span class="logo-sub">Interior · Architecture · Journal</span>
+      </div>
+      <nav class="main-nav" aria-label="Main navigation">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="terms.html">Terms Of Privacy</a></li>
+          <li><a href="privacy.html">Privacy Policy</a></li>
+          <li><a href="cookies.html">Cookies Policy</a></li>
+          <li><a href="disclaimer.html">Disclaimer</a></li>
+          <li><a href="categories.html" class="active">Categories</a></li>
+        </ul>
+      </nav>
+      <button class="search-toggle" id="searchToggle" aria-label="Toggle search">🔍 Search</button>
+    </div>
+    <div class="container search-bar" id="searchBar">
+      <input type="text" id="searchInput" placeholder="Search articles, topics, or keywords..." aria-label="Search articles">
+    </div>
+  </header>
+
+  <main class="container">
+
+    <!-- PAGE TITLE -->
+    <section class="page-title-section">
+      <h1>Categories</h1>
+      <p class="subhead">Explore our archive by topic — from interior design and architecture to materials, lighting, and the quiet principles that shape better spaces.</p>
+    </section>
+
+    <!-- FEATURED CATEGORY (Interior Design) — larger card -->
+    <div class="category-featured">
+      <div class="category-image">
+        <img src="https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?w=1200&auto=format&fit=crop&q=80" alt="Warm minimal living room with neutral tones, wooden textures and soft lighting">
+      </div>
+      <div class="category-info">
+        <h3>Interior Design</h3>
+        <p>From spatial composition and colour theory to the details that make a room feel inevitable. Our most extensive collection — practical guides, case studies, and thoughtful critique on the spaces we live in.</p>
+        <div class="category-stats">
+          <span class="count">42 articles</span>
+          <span>Updated weekly</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- CATEGORY GRID (6 main categories) -->
+    <div class="category-grid">
+      <!-- Architecture -->
+      <article class="category-card">
+        <div class="category-image">
+          <img src="https://images.unsplash.com/photo-1487958449943-2429e8be8625?w=600&auto=format&fit=crop&q=80" alt="Modern building facade with clean lines and repetitive windows">
+        </div>
+        <div class="category-info">
+          <h3>Architecture</h3>
+          <p>Buildings as cultural artefacts — from residential typologies to civic spaces. Essays and analysis on form, context, and the built environment.</p>
+          <div class="category-stats">
+            <span class="count">28 articles</span>
+            <span>Long reads</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- Materials -->
+      <article class="category-card">
+        <div class="category-image">
+          <img src="https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=600&auto=format&fit=crop&q=80" alt="Close-up of natural stone and wood material samples">
+        </div>
+        <div class="category-info">
+          <h3>Materials</h3>
+          <p>How stone, timber, clay, and metal age — and why some surfaces grow more beautiful while others deteriorate. The science and poetry of material choice.</p>
+          <div class="category-stats">
+            <span class="count">19 articles</span>
+            <span>Field guides</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- Lighting -->
+      <article class="category-card">
+        <div class="category-image">
+          <img src="https://images.unsplash.com/photo-1513506003901-1e6a229e2d15?w=600&auto=format&fit=crop&q=80" alt="Warm pendant light hanging over a dining table">
+        </div>
+        <div class="category-info">
+          <h3>Lighting</h3>
+          <p>Beyond the single pendant: layered light, colour temperature, and the psychology of illumination. How to shape atmosphere after dark.</p>
+          <div class="category-stats">
+            <span class="count">16 articles</span>
+            <span>Guides & theory</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- Space Planning -->
+      <article class="category-card">
+        <div class="category-image">
+          <img src="https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?w=600&auto=format&fit=crop&q=80" alt="Open plan living space with clear circulation and furniture layout">
+        </div>
+        <div class="category-info">
+          <h3>Space Planning</h3>
+          <p>Circulation, proportion, and the feeling of generosity. How floor plans shape behaviour, and why good planning is the quietest form of luxury.</p>
+          <div class="category-stats">
+            <span class="count">14 articles</span>
+            <span>Practical</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- Furniture -->
+      <article class="category-card">
+        <div class="category-image">
+          <img src="https://images.unsplash.com/photo-1538688525198-9b88f6f53126?w=600&auto=format&fit=crop&q=80" alt="Minimal wooden chair and side table against a white wall">
+        </div>
+        <div class="category-info">
+          <h3>Furniture</h3>
+          <p>Objects that anchor a room — from iconic mid-century pieces to contemporary craft. Reviews, history, and the ergonomics of everyday sitting.</p>
+          <div class="category-stats">
+            <span class="count">22 articles</span>
+            <span>Reviews & history</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- Interior Theory (additional but fits) -->
+      <article class="category-card">
+        <div class="category-image">
+          <img src="https://images.unsplash.com/photo-1615529162924-f8605388461d?w=600&auto=format&fit=crop&q=80" alt="Person reading in a calm, well-proportioned library corner">
+        </div>
+        <div class="category-info">
+          <h3>Spatial Theory</h3>
+          <p>Phenomenology, atmosphere, and the human experience of rooms. Critical perspectives that connect design to philosophy and psychology.</p>
+          <div class="category-stats">
+            <span class="count">11 articles</span>
+            <span>Essays</span>
+          </div>
+        </div>
+      </article>
+    </div>
+
+    <!-- ALL TOPICS TAG CLOUD (secondary navigation) -->
+    <div class="all-topics">
+      <h2>All Topics</h2>
+      <div class="topic-tags">
+        <a href="#">Adaptive Reuse</a>
+        <a href="#">Acoustics</a>
+        <a href="#">Biophilic Design</a>
+        <a href="#">Ceramics</a>
+        <a href="#">Colour Theory</a>
+        <a href="#">Concrete</a>
+        <a href="#">Courtyard Houses</a>
+        <a href="#">Daylighting</a>
+        <a href="#">Ecological Design</a>
+        <a href="#">Flooring</a>
+        <a href="#">Glass</a>
+        <a href="#">Historic Interiors</a>
+        <a href="#">Joinery</a>
+        <a href="#">Lighting Design</a>
+        <a href="#">Metalwork</a>
+        <a href="#">Minimalism</a>
+        <a href="#">Open Plan</a>
+        <a href="#">Passive Design</a>
+        <a href="#">Pigments</a>
+        <a href="#">Reclaimed Materials</a>
+        <a href="#">Small Spaces</a>
+        <a href="#">Stone</a>
+        <a href="#">Storage</a>
+        <a href="#">Textiles</a>
+        <a href="#">Timber</a>
+        <a href="#">Ventilation</a>
+        <a href="#">Wabi-Sabi</a>
+        <a href="#">Windows</a>
+      </div>
+    </div>
+
+  </main>
+
+  <!-- FOOTER (identical) -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <h5>Echoes Of Structure</h5>
+          <p style="font-size:0.9rem; color:#7a7269;">An independent journal exploring the intersection of interior design, architecture, and the human experience of space.</p>
+        </div>
+        <div>
+          <h5>Topics</h5>
+          <ul>
+            <li><a href="#">Interior Design</a></li>
+            <li><a href="#">Architecture</a></li>
+            <li><a href="#">Materials</a></li>
+            <li><a href="#">Lighting</a></li>
+            <li><a href="#">Space Planning</a></li>
+          </ul>
+        </div>
+        <div>
+          <h5>Information</h5>
+          <ul>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="privacy.html">Privacy Policy</a></li>
+            <li><a href="terms.html">Terms of Use</a></li>
+            <li><a href="cookies.html">Cookie Policy</a></li>
+          </ul>
+        </div>
+        <div>
+          <h5>Follow</h5>
+          <ul>
+            <li><a href="#">Instagram</a></li>
+            <li><a href="#">Pinterest</a></li>
+            <li><a href="#">Twitter</a></li>
+            <li><a href="#">RSS</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2025 Echoes Of Structure. All rights reserved.</span>
+        <span>Made with restraint.</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- JAVASCRIPT (same search toggle, smooth scroll) -->
+  <script>
+    (function() {
+      const searchToggle = document.getElementById('searchToggle');
+      const searchBar = document.getElementById('searchBar');
+      const searchInput = document.getElementById('searchInput');
+
+      searchToggle.addEventListener('click', function() {
+        searchBar.classList.toggle('active');
+        if (searchBar.classList.contains('active')) {
+          searchInput.focus();
+        }
+      });
+
+      // Smooth scroll for anchor links (prevent default only for # links)
+      document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function(e) {
+          const targetId = this.getAttribute('href');
+          if (targetId === '#') return;
+          const target = document.querySelector(targetId);
+          if (target) {
+            e.preventDefault();
+            target.scrollIntoView({ behavior: 'smooth' });
+          }
+        });
+      });
+    })();
+  </script>
+
+</body>
+</html>

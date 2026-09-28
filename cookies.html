@@ -1,0 +1,783 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cookies Policy — Echoes Of Structure Journal</title>
+  <meta name="description" content="Cookies Policy for Echoes Of Structure. Learn how we use cookies and how you can control them.">
+  <meta name="author" content="Echoes Of Structure Editorial">
+  <link rel="canonical" href="https://echoesofstructure.com/cookies.html">
+  <!-- Open Graph -->
+  <meta property="og:title" content="Cookies Policy — Echoes Of Structure Journal">
+  <meta property="og:description" content="How we use cookies on Echoes Of Structure.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://echoesofstructure.com/cookies.html">
+  <meta property="og:image" content="https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?w=1200&h=630&fit=crop">
+  <style>
+    /* ----- RESET & VARIABLES (same as main) ----- */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    :root {
+      --ink: #1e1e1e;
+      --ink-soft: #3a3a3a;
+      --paper: #faf9f7;
+      --paper-warm: #f4f1ec;
+      --accent: #b86b4b;
+      --accent-soft: #d9b8a8;
+      --border-light: #e3dfd9;
+      --border-medium: #cfc9c2;
+      --font-serif: 'Georgia', 'Times New Roman', 'Palatino', serif;
+      --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+      --max-width: 1280px;
+      --content-width: 720px;
+    }
+
+    body {
+      background-color: var(--paper);
+      color: var(--ink);
+      font-family: var(--font-sans);
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+      font-size: 16px;
+    }
+
+    img {
+      max-width: 100%;
+      display: block;
+      height: auto;
+    }
+
+    a {
+      color: var(--ink);
+      text-decoration: none;
+      transition: color 0.15s ease;
+    }
+
+    a:hover {
+      color: var(--accent);
+    }
+
+    /* ----- TYPOGRAPHY (same) ----- */
+    h1, h2, h3, h4 {
+      font-family: var(--font-serif);
+      font-weight: 400;
+      letter-spacing: -0.02em;
+      line-height: 1.2;
+    }
+
+    h1 { font-size: 2.8rem; }
+    h2 { font-size: 2.2rem; margin-bottom: 1rem; }
+    h3 { font-size: 1.6rem; margin-bottom: 0.75rem; }
+    h4 { font-size: 1.2rem; margin-bottom: 0.5rem; }
+
+    p {
+      margin-bottom: 1.25rem;
+      color: var(--ink-soft);
+    }
+
+    .meta {
+      font-size: 0.8rem;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      color: #7a7269;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+      align-items: center;
+    }
+
+    .meta .category {
+      color: var(--accent);
+      font-weight: 600;
+    }
+
+    .reading-time {
+      color: #8a827a;
+    }
+
+    /* ----- LAYOUT (same) ----- */
+    .container {
+      max-width: var(--max-width);
+      margin: 0 auto;
+      padding: 0 1.5rem;
+    }
+
+    .layout-grid {
+      display: grid;
+      grid-template-columns: 1fr 340px;
+      gap: 4rem;
+      align-items: start;
+    }
+
+    @media (max-width: 1024px) {
+      .layout-grid {
+        grid-template-columns: 1fr;
+        gap: 2.5rem;
+      }
+    }
+
+    /* ----- HEADER (exact same) ----- */
+    .site-header {
+      border-bottom: 1px solid var(--border-light);
+      padding: 2rem 0 1.5rem;
+      background: var(--paper);
+      position: sticky;
+      top: 0;
+      z-index: 10;
+      backdrop-filter: blur(4px);
+      background-color: rgba(250, 249, 247, 0.92);
+    }
+
+    .header-inner {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+      gap: 1.5rem;
+    }
+
+    .logo {
+      font-family: var(--font-serif);
+      font-size: 1.9rem;
+      letter-spacing: -0.03em;
+      font-weight: 400;
+      color: var(--ink);
+      line-height: 1.1;
+    }
+
+    .logo span {
+      font-style: italic;
+      color: var(--accent);
+    }
+
+    .logo-sub {
+      font-family: var(--font-sans);
+      font-size: 0.6rem;
+      text-transform: uppercase;
+      letter-spacing: 0.2em;
+      color: #8a827a;
+      display: block;
+      margin-top: 0.2rem;
+    }
+
+    .main-nav ul {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1.8rem;
+      list-style: none;
+    }
+
+    .main-nav a {
+      font-size: 0.85rem;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      font-weight: 500;
+      color: var(--ink-soft);
+      padding-bottom: 0.25rem;
+      border-bottom: 2px solid transparent;
+      transition: border-color 0.15s ease, color 0.15s ease;
+    }
+
+    .main-nav a:hover,
+    .main-nav a.active {
+      color: var(--ink);
+      border-bottom-color: var(--accent);
+    }
+
+    .search-toggle {
+      background: none;
+      border: 1px solid var(--border-medium);
+      padding: 0.5rem 1rem;
+      border-radius: 30px;
+      font-size: 0.8rem;
+      display: flex;
+      align-items: center;
+      gap: 0.4rem;
+      cursor: pointer;
+      color: var(--ink-soft);
+      transition: background 0.15s;
+      font-family: var(--font-sans);
+    }
+
+    .search-toggle:hover {
+      background: var(--paper-warm);
+    }
+
+    .search-bar {
+      display: none;
+      padding: 1rem 0 1.5rem;
+      border-bottom: 1px solid var(--border-light);
+    }
+
+    .search-bar.active {
+      display: block;
+    }
+
+    .search-bar input {
+      width: 100%;
+      padding: 0.9rem 1.2rem;
+      font-size: 1.1rem;
+      border: 1px solid var(--border-medium);
+      background: transparent;
+      font-family: var(--font-serif);
+      border-radius: 40px;
+      outline: none;
+    }
+
+    .search-bar input:focus {
+      border-color: var(--accent);
+    }
+
+    /* ----- PAGE HEADER (legal style) ----- */
+    .page-header {
+      margin: 3rem 0 2.5rem;
+      text-align: center;
+      border-bottom: 1px solid var(--border-light);
+      padding-bottom: 2rem;
+    }
+
+    .page-header h1 {
+      font-size: 3rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .page-header .subhead {
+      font-size: 1.15rem;
+      color: var(--ink-soft);
+      max-width: 600px;
+      margin: 0 auto;
+    }
+
+    @media (max-width: 640px) {
+      .page-header h1 { font-size: 2.2rem; }
+    }
+
+    /* ----- LEGAL CONTENT (cookies specific) ----- */
+    .legal-content {
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    .legal-content h2 {
+      font-size: 1.8rem;
+      margin-top: 2.5rem;
+      margin-bottom: 1rem;
+      padding-bottom: 0.5rem;
+      border-bottom: 1px solid var(--border-light);
+    }
+
+    .legal-content h3 {
+      font-size: 1.3rem;
+      margin-top: 2rem;
+      margin-bottom: 0.75rem;
+    }
+
+    .legal-content p {
+      font-size: 1rem;
+      line-height: 1.7;
+    }
+
+    .legal-content ul, .legal-content ol {
+      margin-bottom: 1.5rem;
+      padding-left: 1.8rem;
+      color: var(--ink-soft);
+    }
+
+    .legal-content li {
+      margin-bottom: 0.5rem;
+      font-size: 0.98rem;
+    }
+
+    .legal-content strong {
+      color: var(--ink);
+      font-weight: 600;
+    }
+
+    .legal-content .last-updated {
+      font-size: 0.85rem;
+      color: #8a827a;
+      margin-bottom: 2rem;
+      font-style: italic;
+    }
+
+    .legal-content table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 1.5rem 0 2rem;
+      font-size: 0.9rem;
+    }
+
+    .legal-content th {
+      text-align: left;
+      background: var(--paper-warm);
+      padding: 0.75rem 1rem;
+      font-weight: 600;
+      font-family: var(--font-sans);
+      border: 1px solid var(--border-light);
+      color: #5a5249;
+    }
+
+    .legal-content td {
+      padding: 0.75rem 1rem;
+      border: 1px solid var(--border-light);
+      color: var(--ink-soft);
+      vertical-align: top;
+    }
+
+    .legal-content tr:nth-child(even) {
+      background: rgba(244, 241, 236, 0.4);
+    }
+
+    /* ----- SIDEBAR (exact same) ----- */
+    .sidebar {
+      position: sticky;
+      top: 100px;
+    }
+
+    .sidebar-section {
+      margin-bottom: 2.5rem;
+      border-bottom: 1px solid var(--border-light);
+      padding-bottom: 2rem;
+    }
+
+    .sidebar-section h3 {
+      font-size: 1.2rem;
+      font-family: var(--font-sans);
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      margin-bottom: 1.25rem;
+      color: #5a5249;
+    }
+
+    .sidebar-list {
+      list-style: none;
+    }
+
+    .sidebar-list li {
+      margin-bottom: 1rem;
+      padding-bottom: 1rem;
+      border-bottom: 1px solid var(--border-light);
+    }
+
+    .sidebar-list li:last-child {
+      border-bottom: none;
+    }
+
+    .sidebar-list a {
+      font-family: var(--font-serif);
+      font-size: 1.05rem;
+      line-height: 1.3;
+      display: block;
+      margin-bottom: 0.25rem;
+    }
+
+    .sidebar-list .meta {
+      font-size: 0.7rem;
+    }
+
+    .editor-box {
+      background: var(--paper-warm);
+      padding: 1.75rem;
+      border-radius: 4px;
+      text-align: center;
+    }
+
+    .editor-box img {
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin: 0 auto 1rem;
+    }
+
+    .editor-box h4 {
+      font-family: var(--font-serif);
+      margin-bottom: 0.25rem;
+    }
+
+    .editor-box p {
+      font-size: 0.9rem;
+      margin-bottom: 1rem;
+    }
+
+    .newsletter-mini input {
+      width: 100%;
+      padding: 0.8rem 1rem;
+      border: 1px solid var(--border-medium);
+      background: white;
+      font-size: 0.9rem;
+      margin-bottom: 0.75rem;
+      border-radius: 3px;
+      font-family: var(--font-sans);
+    }
+
+    .newsletter-mini button {
+      width: 100%;
+      padding: 0.8rem;
+      background: var(--ink);
+      color: white;
+      border: none;
+      font-size: 0.85rem;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      cursor: pointer;
+      border-radius: 3px;
+      transition: background 0.15s;
+    }
+
+    .newsletter-mini button:hover {
+      background: var(--accent);
+    }
+
+    /* ----- FOOTER (exact same) ----- */
+    .site-footer {
+      margin-top: 4rem;
+      border-top: 1px solid var(--border-medium);
+      padding: 3rem 0 2rem;
+      background: var(--paper-warm);
+    }
+
+    .footer-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 2.5rem;
+    }
+
+    @media (max-width: 768px) {
+      .footer-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    .footer-grid h5 {
+      font-family: var(--font-sans);
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      font-size: 0.75rem;
+      margin-bottom: 1rem;
+      color: #7a7269;
+    }
+
+    .footer-grid ul {
+      list-style: none;
+    }
+
+    .footer-grid li {
+      margin-bottom: 0.6rem;
+      font-size: 0.9rem;
+    }
+
+    .footer-bottom {
+      margin-top: 3rem;
+      padding-top: 1.5rem;
+      border-top: 1px solid var(--border-light);
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      font-size: 0.8rem;
+      color: #7a7269;
+    }
+
+    /* ----- RESPONSIVE (same) ----- */
+    @media (max-width: 640px) {
+      h1 { font-size: 2rem; }
+      h2 { font-size: 1.7rem; }
+      .header-inner {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+      .main-nav ul {
+        gap: 1rem;
+      }
+      .legal-content table {
+        font-size: 0.8rem;
+      }
+      .legal-content th, .legal-content td {
+        padding: 0.5rem 0.6rem;
+      }
+    }
+
+    .border-top {
+      border-top: 1px solid var(--border-light);
+      padding-top: 2rem;
+    }
+
+    .hidden { display: none; }
+  </style>
+</head>
+<body>
+
+  <!-- HEADER (consistent) -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="logo">
+        Echoes <span>Of</span> Structure
+        <span class="logo-sub">Interior · Architecture · Journal</span>
+      </div>
+      <nav class="main-nav" aria-label="Main navigation">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="terms.html">Terms Of Privacy</a></li>
+          <li><a href="privacy.html">Privacy Policy</a></li>
+          <li><a href="cookies.html" class="active">Cookies Policy</a></li>
+          <li><a href="disclaimer.html">Disclaimer</a></li>
+          <li><a href="categories.html">Categories</a></li>
+        </ul>
+      </nav>
+      <button class="search-toggle" id="searchToggle" aria-label="Toggle search">🔍 Search</button>
+    </div>
+    <div class="container search-bar" id="searchBar">
+      <input type="text" id="searchInput" placeholder="Search articles, topics, or keywords..." aria-label="Search articles">
+    </div>
+  </header>
+
+  <main class="container">
+
+    <!-- PAGE HEADER -->
+    <div class="page-header">
+      <h1>Cookies Policy</h1>
+      <p class="subhead">How we use cookies and similar technologies on Echoes Of Structure.</p>
+    </div>
+
+    <!-- LAYOUT GRID WITH LEGAL CONTENT + SIDEBAR -->
+    <div class="layout-grid">
+
+      <!-- MAIN LEGAL CONTENT -->
+      <div class="legal-content">
+        <p class="last-updated"><strong>Last updated:</strong> 15 March 2025</p>
+
+        <p>This Cookies Policy explains what cookies are, how we use them on <strong>Echoes Of Structure</strong> (the "Journal", "we", "us", or "our"), and the choices you have regarding their use. By continuing to browse this website, you agree to our use of cookies in accordance with this policy.</p>
+
+        <h2>1. What are cookies?</h2>
+        <p>Cookies are small text files that are placed on your computer or mobile device when you visit a website. They are widely used to make websites work more efficiently, as well as to provide information to the site owners. Cookies do not typically contain any information that personally identifies a user, but personal information that we store about you may be linked to the information stored in and obtained from cookies.</p>
+
+        <h2>2. How we use cookies</h2>
+        <p>We use cookies for a variety of reasons, including:</p>
+        <ul>
+          <li><strong>Essential functionality:</strong> To ensure the website functions properly — for example, remembering your cookie preferences or enabling basic navigation.</li>
+          <li><strong>Analytics and performance:</strong> To understand how visitors interact with the Journal, which pages are most popular, and how we can improve the reading experience.</li>
+          <li><strong>Preferences:</strong> To remember settings you have chosen, such as language or display preferences.</li>
+          <li><strong>Advertising and partnerships:</strong> In limited cases, we may use cookies to deliver relevant editorial partnerships or sponsored content, always respecting your privacy choices.</li>
+        </ul>
+
+        <h2>3. Types of cookies we use</h2>
+        <p>The table below explains the specific cookies we use and their purpose:</p>
+        <table>
+          <thead>
+            <tr>
+              <th>Cookie name / type</th>
+              <th>Purpose</th>
+              <th>Duration</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>eos_session</strong> (essential)</td>
+              <td>Maintains your session while you browse the site; essential for the website to function.</td>
+              <td>Session</td>
+            </tr>
+            <tr>
+              <td><strong>eos_preferences</strong></td>
+              <td>Stores your cookie consent choices and display preferences (e.g., dark mode if applicable).</td>
+              <td>12 months</td>
+            </tr>
+            <tr>
+              <td><strong>_ga, _gid</strong> (Google Analytics)</td>
+              <td>Used to collect anonymous statistics about how visitors use the site, such as pages visited and time on page.</td>
+              <td>2 years / 24 hours</td>
+            </tr>
+            <tr>
+              <td><strong>eos_newsletter</strong></td>
+              <td>Remembers if you have dismissed the newsletter signup prompt.</td>
+              <td>6 months</td>
+            </tr>
+            <tr>
+              <td><strong>Third-party (embedded content)</strong></td>
+              <td>Embedded content from platforms such as Vimeo, YouTube, or social media may set their own cookies when you interact with them.</td>
+              <td>Varies by provider</td>
+            </tr>
+          </tbody>
+        </table>
+        <p>We do not use cookies to collect sensitive personal information, and we never sell your data to third parties.</p>
+
+        <h2>4. Third-party cookies</h2>
+        <p>Some cookies are placed by third-party services that appear on our pages. For example, we use Google Analytics to help us understand site traffic. These third parties may use cookies, web beacons, and similar technologies to collect information about your use of our site and other websites. We do not control these third-party cookies — please refer to the respective privacy policies of these providers for more information.</p>
+
+        <h2>5. Your choices regarding cookies</h2>
+        <p>You have several options when it comes to managing cookies:</p>
+        <ul>
+          <li><strong>Browser settings:</strong> Most web browsers allow you to control cookies through their settings preferences. You can typically set your browser to refuse cookies or delete certain cookies. Please note that if you disable essential cookies, parts of the website may not function properly.</li>
+          <li><strong>Opt-out of analytics:</strong> You can install the <a href="https://tools.google.com/dlpage/gaoptout" target="_blank" rel="noopener">Google Analytics Opt-out Browser Add-on</a> to prevent your data from being used by Google Analytics.</li>
+          <li><strong>Cookie consent banner:</strong> Where available, you can manage your preferences via our cookie consent tool.</li>
+        </ul>
+        <p>To find out more about cookies, including how to see what cookies have been set and how to manage and delete them, visit <a href="https://www.aboutcookies.org" target="_blank" rel="noopener">www.aboutcookies.org</a> or <a href="https://www.allaboutcookies.org" target="_blank" rel="noopener">www.allaboutcookies.org</a>.</p>
+
+        <h2>6. Changes to this Cookies Policy</h2>
+        <p>We may update this Cookies Policy from time to time to reflect changes in technology, legislation, or our practices. Any updates will be posted on this page with a revised "Last updated" date. We encourage you to review this page periodically.</p>
+
+        <h2>7. Contact us</h2>
+        <p>If you have any questions about this Cookies Policy or our use of cookies, please contact us at:</p>
+        <p><strong>Email:</strong> <a href="mailto:privacy@echoesofstructure.com">privacy@echoesofstructure.com</a><br>
+        <strong>Postal address:</strong> Echoes Of Structure, 12 Rue de la Paix, 75002 Paris, France</p>
+
+        <div class="border-top" style="margin-top:2.5rem;">
+          <p style="font-size:0.9rem; color:#7a7269;">This Cookies Policy is part of our commitment to transparency. For more information on how we handle your data, please see our <a href="privacy.html">Privacy Policy</a> and <a href="terms.html">Terms of Use</a>.</p>
+        </div>
+      </div>
+
+      <!-- SIDEBAR (identical to main) -->
+      <aside class="sidebar">
+        <div class="sidebar-section">
+          <h3>Popular This Month</h3>
+          <ul class="sidebar-list">
+            <li>
+              <a href="#">The 60-Centimetre Rule: Human Scale in Planning</a>
+              <div class="meta"><span class="reading-time">11 min read</span></div>
+            </li>
+            <li>
+              <a href="#">Concrete, Reconsidered: Why Brutalism Is Finding New Meaning</a>
+              <div class="meta"><span class="reading-time">9 min read</span></div>
+            </li>
+            <li>
+              <a href="#">The Colour of Calm: Pigments That Soothe Rather Than Shout</a>
+              <div class="meta"><span class="reading-time">14 min read</span></div>
+            </li>
+            <li>
+              <a href="#">The Reading Nook: A Case Study in Micro-Architecture</a>
+              <div class="meta"><span class="reading-time">6 min read</span></div>
+            </li>
+          </ul>
+        </div>
+
+        <div class="sidebar-section">
+          <h3>Editor's Pick</h3>
+          <ul class="sidebar-list">
+            <li>
+              <a href="#">The Courtyard House: A Timeless Typology for Modern Living</a>
+              <div class="meta"><span class="category">Architecture</span> <span class="reading-time">18 min read</span></div>
+            </li>
+            <li>
+              <a href="#">Layered Light: Beyond the Single Pendant</a>
+              <div class="meta"><span class="category">Lighting</span> <span class="reading-time">8 min read</span></div>
+            </li>
+          </ul>
+        </div>
+
+        <div class="sidebar-section">
+          <h3>About the Editor</h3>
+          <div class="editor-box">
+            <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=200&auto=format&fit=crop&q=80" alt="Portrait of Elena Marchetti, Editor-in-Chief">
+            <h4>Elena Marchetti</h4>
+            <p>Architect and design writer. Elena has spent two decades documenting the built environment across Europe and Japan. She founded Echoes Of Structure to explore the stories behind the spaces we inhabit.</p>
+            <a href="#" style="font-size:0.85rem; border-bottom:1px solid var(--accent);">All articles →</a>
+          </div>
+        </div>
+
+        <div class="sidebar-section">
+          <h3>Newsletter</h3>
+          <div class="newsletter-mini">
+            <p style="font-size:0.9rem; margin-bottom:1rem;">Weekly essays, guides, and reading recommendations. No spam.</p>
+            <input type="email" placeholder="Your email address" aria-label="Email address">
+            <button>Subscribe</button>
+          </div>
+        </div>
+
+        <div class="sidebar-section">
+          <h3>Categories</h3>
+          <ul class="sidebar-list" style="font-size:0.95rem;">
+            <li><a href="#">Interior Design</a></li>
+            <li><a href="#">Architecture</a></li>
+            <li><a href="#">Materials</a></li>
+            <li><a href="#">Space Planning</a></li>
+            <li><a href="#">Lighting</a></li>
+            <li><a href="#">Furniture</a></li>
+          </ul>
+        </div>
+      </aside>
+    </div>
+  </main>
+
+  <!-- FOOTER (identical to main) -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <h5>Echoes Of Structure</h5>
+          <p style="font-size:0.9rem; color:#7a7269;">An independent journal exploring the intersection of interior design, architecture, and the human experience of space.</p>
+        </div>
+        <div>
+          <h5>Topics</h5>
+          <ul>
+            <li><a href="#">Interior Design</a></li>
+            <li><a href="#">Architecture</a></li>
+            <li><a href="#">Materials</a></li>
+            <li><a href="#">Lighting</a></li>
+            <li><a href="#">Space Planning</a></li>
+          </ul>
+        </div>
+        <div>
+          <h5>Information</h5>
+          <ul>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms of Use</a></li>
+            <li><a href="#">Cookie Policy</a></li>
+          </ul>
+        </div>
+        <div>
+          <h5>Follow</h5>
+          <ul>
+            <li><a href="#">Instagram</a></li>
+            <li><a href="#">Pinterest</a></li>
+            <li><a href="#">Twitter</a></li>
+            <li><a href="#">RSS</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2025 Echoes Of Structure. All rights reserved.</span>
+        <span>Made with restraint.</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- JAVASCRIPT (same as main: search toggle) -->
+  <script>
+    (function() {
+      // SEARCH TOGGLE
+      const searchToggle = document.getElementById('searchToggle');
+      const searchBar = document.getElementById('searchBar');
+      const searchInput = document.getElementById('searchInput');
+
+      searchToggle.addEventListener('click', function() {
+        searchBar.classList.toggle('active');
+        if (searchBar.classList.contains('active')) {
+          searchInput.focus();
+        }
+      });
+
+      // SMOOTH SCROLL FOR ANCHOR LINKS
+      document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function(e) {
+          const targetId = this.getAttribute('href');
+          if (targetId === '#') return;
+          const target = document.querySelector(targetId);
+          if (target) {
+            e.preventDefault();
+            target.scrollIntoView({ behavior: 'smooth' });
+          }
+        });
+      });
+    })();
+  </script>
+
+</body>
+</html>
